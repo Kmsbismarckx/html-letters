@@ -19,9 +19,6 @@
       body {
         padding: 50px;
         color: #3f4149;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100vw;
         height: 100vh;
       }
@@ -32,17 +29,28 @@
         width: 100%;
       }
 
+      th {
+        text-align: center;
+      }
+
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+
+      td {
+        text-align: center;
+      }
+
       .title {
+        width: 100%;
+        text-align: center;
         margin-bottom: 30px;
         color: black;
       }
 
       .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 60px;
-        border: 1px solid transparent;
+        margin: 0 auto;
         box-shadow: 0 0 3px 0 #bbbbbb;
         border-radius: 8px;
         width: 568px;
@@ -52,7 +60,6 @@
         margin-bottom: 50px;
         user-select: none;
         -webkit-user-drag: none;
-        user-drag: none;
       }
 
       .welcome {
@@ -67,23 +74,13 @@
       }
 
       .additional__link {
-        width: 100%;
         text-decoration: none;
       }
 
       .request {
         font-size: 14px;
         line-height: 150%;
-        text-align: center;
         margin-bottom: 30px;
-      }
-
-      .society {
-        display: flex;
-        justify-content: center;
-        column-gap: 15px;
-        width: 100%;
-        height: 50px;
       }
 
       .society-item {
@@ -95,48 +92,79 @@
       .society-item a {
         user-select: none;
         -webkit-user-drag: none;
-        user-drag: none;
+      }
+
+      .society_spacing {
+        width: 15px;
       }
     </style>
   </head>
   <body>
-    <table>
+    <table class="main">
       <tr>
-        <td class="main">
-          <h2 class="title">Информационное письмо</h2>
-          <img class="logo" src="./logo.png" alt="МИРОКО" />
-          <h2 class="welcome">Онлайн платформа MIROco</h2>
-          <p class="main-message">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-            deserunt soluta facere atque voluptatum, cum eligendi dignissimos
-            dolor saepe corrupti beatae laborum nobis repellendus sint eum
-            incidunt placeat quaerat quis?
-          </p>
-
-          <p class="request">
-            Если у Вас остались вопросы. То наша служба поддержки будет рада на
-            них ответить.<br />
-            <a
-              class="additional__link"
-              target="_blank"
-              href="mailto:support@miroco.ru?subject=Приглашение"
-              >support@miroco.ru</a
-            >
-            <br />
-            С уважением, администрация.
-          </p>
-          <ul class="society">
-            <li class="society-item">
-              <a href="https://t.me/MIROco_OOO"
-                ><img src="./telegram.png" alt="Telegram"
-              /></a>
-            </li>
-            <li class="society-item">
-              <a href="https://vk.com/ooo_miroco"
-                ><img src="./vk.png" alt="VK" />
-              </a>
-            </li>
-          </ul>
+        <td style="padding: 23px 67px">
+          <table>
+            <tbody>
+              <tr>
+                <th>
+                  <h2 class="title">Информационное письмо</h2>
+                </th>
+              </tr>
+              <tr>
+                <td><img class="logo" src="./logo.png" alt="МИРОКО" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <h2 class="welcome">Онлайн платформа MIROco</h2>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="main-message">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi, deserunt soluta facere atque voluptatum, cum eligendi
+                    dignissimos dolor saepe corrupti beatae laborum nobis
+                    repellendus sint eum incidunt placeat quaerat quis?
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="request">
+                    Если у Вас остались вопросы. То наша служба поддержки будет
+                    рада на них ответить.<br />
+                    <a
+                      class="additional__link"
+                      target="_blank"
+                      href="mailto:support@miroco.ru?subject=Приглашение"
+                      >support@miroco.ru</a
+                    >
+                    <br />
+                    С уважением, администрация.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <td class="society-item">
+                        <a href="https://t.me/MIROco_OOO"
+                          ><img src="./telegram.png" alt="Telegram"
+                        /></a>
+                      </td>
+                      <td class="society_spacing">&nbsp;</td>
+                      <td class="society-item">
+                        <a href="https://vk.com/ooo_miroco"
+                          ><img src="./vk.png" alt="VK" />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </td>
       </tr>
     </table>
